@@ -14,6 +14,7 @@ const SHeader = styled.header`
     width: 96%;
     backdrop-filter: blur(17px);
     background: linear-gradient(180deg, #A0927F 0%, rgba(176, 176, 176, 0) 100%, rgba(176, 176, 176, 0) 100%, #000000 100%);
+    z-index: 9999;
 `
 
 const SHeaderCV = styled.a`

@@ -4,15 +4,17 @@ import Projects from '../../molecules/projects/projects';
 import { IProjects } from '../../molecules/projects/Iprojects';
 import Me from '../../../assets/me.png';
 import styled from 'styled-components';
-import Lyeza from '../../../assets/lyeza.png';
-import Multiply from '../../../assets/multiply.png';
-import Pokedex from '../../../assets/pokedex.png';
-import Spotify from '../../../assets/spotify.png';
+import Lyeza from '../../../assets/projects/lyeza.png';
+import Multiply from '../../../assets/projects/multiply.png';
+import Pokedex from '../../../assets/projects/pokedex.png';
+import Spotify from '../../../assets/projects/spotify.png';
 
 const SAboutMe = styled.section`
     display: flex;
+    height: 100vh;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
 `
 
 const SMeImage = styled.div`
@@ -20,6 +22,9 @@ const SMeImage = styled.div`
 
     & img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
     }
 `
 const SMeText = styled.div`
@@ -67,7 +72,7 @@ export default function AboutMe({ me, hook, projects }: IAboutMe) {
             {
                 imageUrl: Multiply,
                 name: "Multiply",
-                githubUrl: "https://github.com/Jose-DeAvila"
+                githubUrl: "https://github.com/Jose-DeAvila",
             },
             {
                 imageUrl: Pokedex,

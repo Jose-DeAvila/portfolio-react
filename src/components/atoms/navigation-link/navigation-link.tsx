@@ -1,5 +1,6 @@
 import { INavigationLink } from './Inavigation-link'
 import styled from 'styled-components'
+import { useState } from 'react';
 
 const SNavigationLinkAnchor = styled.a`
     padding: 10px;
@@ -18,7 +19,7 @@ const SNavigationLinkAnchor = styled.a`
         width: 100%;
         height: 2px;
         opacity: 0;
-        background-color: black;
+        background-color: #3b3b3b;
         transition: .4s ease all;
     }
 
@@ -30,6 +31,7 @@ const SNavigationLinkAnchor = styled.a`
 `
 
 export default function NavigationLink({ text, navigateTo }: INavigationLink) {
+
     return (
         <SNavigationLinkAnchor href={navigateTo}>{text}</SNavigationLinkAnchor>
     )
