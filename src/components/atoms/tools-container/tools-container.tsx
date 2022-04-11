@@ -30,6 +30,7 @@ const SToolIcon = styled.li`
         transform: translateX(-50%);
         transition: .3s ease all;
         opacity: 0;
+        white-space: nowrap;
     }
 `
 

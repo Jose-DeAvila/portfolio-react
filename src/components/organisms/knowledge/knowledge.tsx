@@ -5,6 +5,8 @@ import styled from 'styled-components';
 const SKnowledge = styled.section`
     text-align: center;
     margin: 30px 0;
+    max-width: 1700px;
+    margin: 0 auto;
 
     h2 {
         font-size: 36px;

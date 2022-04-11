@@ -11,10 +11,11 @@ const SHeader = styled.header`
     align-items: center;
     padding: 15px 30px;
     position: fixed;
-    width: 96%;
+    width: 100%;
     backdrop-filter: blur(17px);
     background: linear-gradient(180deg, #A0927F 0%, rgba(176, 176, 176, 0) 100%, rgba(176, 176, 176, 0) 100%, #000000 100%);
     z-index: 9999;
+    box-sizing: border-box;
 `
 
 const SHeaderCV = styled.a`

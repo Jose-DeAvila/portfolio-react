@@ -14,7 +14,11 @@ const SAboutMe = styled.section`
     height: 100vh;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
+    column-gap: 20px;
     color: #1f1f1f;
+    max-height: 820px;
+    max-width: 1700px;
+    margin: 0 auto;
 `
 
 const SMeImage = styled.div`
@@ -52,9 +56,7 @@ const SMeInfo = styled.div`
     }
 `
 
-const SMeDescription = styled.div`
-    padding-bottom: 100px;
-`
+const SMeDescription = styled.div``
 const SMeProjects = styled.div``
 
 
@@ -83,7 +85,7 @@ export default function AboutMe({ me, hook, projects }: IAboutMe) {
             {
                 imageUrl: Spotify,
                 name: "Spotify",
-                githubUrl: "https://github.com/Jose-DeAvila"
+                githubUrl: "https://github.com/Jose-DeAvila",
             }
         ]
     }
